@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RABIN R— Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #f0f6fc;
+      --muted:#c9d1d9;
+      --accent1:#7c3aed; /* purple */
+      --accent2:#06b6d4; /* cyan */
+      --shadow: 0 8px 20px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Poppins, sans-serif;
+      color:var(--text); background:linear-gradient(180deg,#0f172a,#0d1117);
+    }
+    .container{max-width:1000px; margin:0 auto; padding:24px}
+    .header{display:flex; align-items:center; gap:20px; background:linear-gradient(135deg, rgba(124,58,237,.2), rgba(6,182,212,.2)); padding:20px; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .avatar{width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid var(--accent2)}
+    h1{margin:0; font-size:32px}
+    .subtitle{margin-top:4px; color:var(--muted)}.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:20px; margin-top:24px}
+.card{background:var(--card); padding:20px; border-radius:var(--radius); box-shadow:var(--shadow)}
+
+.list{list-style:none; padding:0; margin:0}
+.list li{padding:8px 0; border-bottom:1px solid rgba(255,255,255,.1)}
+.list li:last-child{border-bottom:none}
+
+.pill{display:inline-block; padding:6px 12px; border-radius:999px; background:linear-gradient(135deg,var(--accent1),var(--accent2)); color:#fff; margin:4px; font-size:14px; font-weight:600}
+
+.footer{text-align:center; margin-top:30px; font-size:13px; opacity:.6}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <section class="header">
+      <img class="avatar" str /storage/emulated/0/DCIM/Camera/IMG_20250825_095427.jpg alt="RABIN R" />
+      <div>
+        <h1>RABIN.R</h1>
+        <div class="subtitle">II B.Sc. Computer Science</div>
+        <div class="subtitle">Date of Birth: 08/03/2007</div>
+      </div>RABIN R</section><!-- Bio Data -->
+<section class="grid">
+  <article class="card">
+    <h3>Family</h3>
+    <ul class="list">
+      <li><strong>Father:</strong> RANJITHKUMAR</li>
+      <li><strong>Mother:</strong>PREMA</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Contact</h3>
+    <ul class="list">
+      <li><strong>Phone:</strong> +91 8122688448</li>
+      <li><strong>Email:</strong> lovelyrabin46@gmail.com</li>
+      <li><strong>Address:</strong> 1/128 PONNAMMAL PATTI
+ THENI DISTRICT</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Skills</h3>
+    <span class="pill">HTML</span>
+    <span class="pill">CSS</span>
+    <span class="pill">JavaScript</span>
+  </article>
+
+  <article class="card">
+    <h3>Languages</h3>
+    <span class="pill">English</span>
+    <span class="pill">Tamil</span>
+  </article>
+
+  <article class="card">
+    <h3>Interests</h3>
+    <ul class="list">
+      <li>Sports</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Projects</h3>
+    <ul class="list">
+      <li><strong>Portfolio Website:</strong> A responsive website built with HTML, CSS, and JavaScript.</li>
+    </ul>
+  </article>
+</section>
+
+<p class="footer">© <span id="yr"></span> Chandrasekar M — Portfolio Project</p>
+
+  </div>  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script></body>
+</html>
